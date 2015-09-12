@@ -65,17 +65,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BasketSpecs.cs" />
+    <Compile Include="BasketWithDiscountSpecs.cs" />
+    <Compile Include="DiscountEngine\Conditions\EqualsSpec.cs" />
+    <Compile Include="DiscountEngine\Conditions\GreaterThanSpec.cs" />
+    <Compile Include="DiscountEngine\Discounts\Buy2Get50PercentOffSpecs.cs" />
+    <Compile Include="DiscountEngine\Discounts\Buy3Get4ThFreeSpecs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestProducts.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Basket\Basket.csproj">
-      <Project>{82cf5c83-4038-4162-8695-72b118442cce}</Project>
-      <Name>Basket</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Basket\Basket.csproj">
+      <Project>{1f38a3e3-1eab-47c3-87be-9df2bed0c329}</Project>
+      <Name>Basket</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket", "Basket\Basket.csproj", "{82CF5C83-4038-4162-8695-72B118442CCE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket.Tests", "Basket.Tests\Basket.Tests.csproj", "{A121BFAA-7471-46F5-B191-F166AA882855}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket", "Basket\Basket.csproj", "{1F38A3E3-1EAB-47C3-87BE-9DF2BED0C329}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{82CF5C83-4038-4162-8695-72B118442CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{82CF5C83-4038-4162-8695-72B118442CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{82CF5C83-4038-4162-8695-72B118442CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{82CF5C83-4038-4162-8695-72B118442CCE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A121BFAA-7471-46F5-B191-F166AA882855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A121BFAA-7471-46F5-B191-F166AA882855}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A121BFAA-7471-46F5-B191-F166AA882855}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A121BFAA-7471-46F5-B191-F166AA882855}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F38A3E3-1EAB-47C3-87BE-9DF2BED0C329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F38A3E3-1EAB-47C3-87BE-9DF2BED0C329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F38A3E3-1EAB-47C3-87BE-9DF2BED0C329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F38A3E3-1EAB-47C3-87BE-9DF2BED0C329}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{82CF5C83-4038-4162-8695-72B118442CCE}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{1F38A3E3-1EAB-47C3-87BE-9DF2BED0C329}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Basket</RootNamespace>
     <AssemblyName>Basket</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,17 +40,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Basket.cs" />
+    <Compile Include="CurrentDiscounts.cs" />
+    <Compile Include="DiscountEngine\Conditions\Equals.cs" />
+    <Compile Include="DiscountEngine\Conditions\GreaterThan.cs" />
+    <Compile Include="DiscountEngine\DiscountEngine.cs" />
+    <Compile Include="DiscountEngine\Discounts\BaseDiscount.cs" />
+    <Compile Include="DiscountEngine\Discounts\Buy2Get50PercentOff.cs" />
+    <Compile Include="DiscountEngine\Discounts\Buy3Get4thFree.cs" />
+    <Compile Include="DiscountEngine\Interfaces\ICondition.cs" />
+    <Compile Include="DiscountEngine\Interfaces\IDiscount.cs" />
+    <Compile Include="IBasket.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resources\Basket.cs" />
-    <Compile Include="Resources\BasketItem.cs" />
-    <Compile Include="Resources\Product.cs" />
-    <Compile Include="Services\BasketService.cs" />
-    <Compile Include="Services\IBasketService.cs" />
+    <Compile Include="Resources\BasketModel.cs" />
+    <Compile Include="Resources\BasketItemModel.cs" />
+    <Compile Include="Resources\DiscountModel.cs" />
+    <Compile Include="Resources\ProductModel.cs" />
+    <Compile Include="Stock.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
